@@ -1,0 +1,359 @@
+/* =========================
+   🌈 Tailwind v4 Theme Variables
+   ========================= */
+
+/* 🧱 Base color mappings */
+@theme {
+  /* =========================
+     🩵 Blue
+     ========================= */
+  --blue-lightest: theme(colors.blue.50);
+  --blue-lighter: theme(colors.blue.100);
+  --blue-light: theme(colors.blue.400);
+  --blue-default-dark: theme(colors.blue.500);
+  --blue-default-light: theme(colors.blue.600);
+  --blue-dark: theme(colors.blue.700);
+  --blue-darker: theme(colors.blue.900);
+  --blue-darkest: theme(colors.blue.950);
+
+  /* =========================
+     ⚫ Gray
+     ========================= */
+  --gray-lightest: theme(colors.gray.50);
+  --gray-lighter: theme(colors.gray.100);
+  --gray-light: theme(colors.gray.400);
+  --gray-default-dark: theme(colors.gray.500);
+  --gray-default-light: theme(colors.gray.600);
+  --gray-dark: theme(colors.gray.700);
+  --gray-darker: theme(colors.gray.900);
+  --gray-darkest: theme(colors.gray.950);
+
+  /* =========================
+     🔴 Red
+     ========================= */
+  --red-lightest: theme(colors.red.50);
+  --red-lighter: theme(colors.red.100);
+  --red-light: theme(colors.red.400);
+  --red-default-dark: theme(colors.red.500);
+  --red-default-light: theme(colors.red.600);
+  --red-dark: theme(colors.red.700);
+  --red-darker: theme(colors.red.900);
+  --red-darkest: theme(colors.red.950);
+
+  /* =========================
+     🟢 Emerald
+     ========================= */
+  --emerald-lightest: theme(colors.emerald.50);
+  --emerald-lighter: theme(colors.emerald.100);
+  --emerald-light: theme(colors.emerald.400);
+  --emerald-default-dark: theme(colors.emerald.500);
+  --emerald-default-light: theme(colors.emerald.600);
+  --emerald-dark: theme(colors.emerald.700);
+  --emerald-darker: theme(colors.emerald.900);
+  --emerald-darkest: theme(colors.emerald.950);
+
+  /* =========================
+     🩵 Sky
+     ========================= */
+  --sky-lightest: theme(colors.sky.50);
+  --sky-lighter: theme(colors.sky.100);
+  --sky-light: theme(colors.sky.400);
+  --sky-default-dark: theme(colors.sky.500);
+  --sky-default-light: theme(colors.sky.600);
+  --sky-dark: theme(colors.sky.700);
+  --sky-darker: theme(colors.sky.900);
+  --sky-darkest: theme(colors.sky.950);
+
+  /* =========================
+     🟡 Amber
+     ========================= */
+  --amber-lightest: theme(colors.amber.50);
+  --amber-lighter: theme(colors.amber.100);
+  --amber-light: theme(colors.amber.400);
+  --amber-default-dark: theme(colors.amber.500);
+  --amber-default-light: theme(colors.amber.600);
+  --amber-dark: theme(colors.amber.700);
+  --amber-darker: theme(colors.amber.900);
+  --amber-darkest: theme(colors.amber.950);
+
+   /* =========================
+      🧩 SURFACE TOKENS
+      ========================= */
+
+   /* --- Base Surfaces (Layers) --- */
+   --surface-base: var(--blue-lightest);           /* Main background (body) */
+   --surface-raised: var(--blue-lighter);          /* Cards, panels */
+   --surface-overlay: var(--gray-darker);          /* Modals, drawers, tooltips */
+   --surface-elevated: var(--blue-light);          /* Floating elements (dropdowns, popovers) */
+
+   /* --- Interactive Surfaces --- */
+   --surface-interactive: var(--blue-default-light);        /* Clickable areas */
+   --surface-interactive-hover: var(--blue-dark);           /* Hover state */
+   --surface-interactive-active: var(--blue-darker);        /* Active/pressed state */
+   --surface-interactive-disabled: var(--gray-lighter);     /* Disabled state */
+
+   /* --- State Surfaces (Feedback) --- */
+   --surface-success: var(--emerald-lightest);     /* Success banners/alerts */
+   --surface-success-muted: var(--emerald-lighter); /* Subtle success BG */
+   --surface-error: var(--red-lightest);           /* Error banners/alerts */
+   --surface-error-muted: var(--red-lighter);      /* Subtle error BG */
+   --surface-warning: var(--amber-lightest);       /* Warning banners/alerts */
+   --surface-warning-muted: var(--amber-lighter);  /* Subtle warning BG */
+   --surface-info: var(--sky-lightest);            /* Info banners/alerts */
+   --surface-info-muted: var(--sky-lighter);       /* Subtle info BG */
+
+   /* --- Input Surfaces --- */
+   --surface-input: var(--blue-lightest);          /* Input field background */
+   --surface-input-hover: var(--blue-lighter);     /* Input hover */
+   --surface-input-focus: var(--blue-lightest);    /* Input focused */
+   --surface-input-disabled: var(--gray-lighter);  /* Disabled input */
+
+   /* --- Special Surfaces --- */
+   --surface-accent: var(--blue-default-light);    /* Accent sections/CTAs */
+   --surface-inverse: var(--gray-darkest);         /* Inverted sections (footer, etc.) */
+   --surface-backdrop: rgba(0, 0, 0, 0.5);         /* Modal backdrop */
+
+   /* =========================
+      📝 TEXT TOKENS
+      ========================= */
+
+   /* --- Base Text --- */
+   --text-primary: var(--gray-darker);            /* Main body text */
+   --text-secondary: var(--gray-dark);            /* Secondary text */
+   --text-tertiary: var(--gray-default-dark);     /* De-emphasized text */
+   --text-muted: var(--gray-light);               /* Subtle/helper text */
+   --text-disabled: var(--gray-light);            /* Disabled text */
+
+   /* --- Interactive Text --- */
+   --text-interactive: var(--blue-default-light);         /* Links, clickable text */
+   --text-interactive-hover: var(--blue-dark);            /* Hover state */
+   --text-interactive-active: var(--blue-darker);         /* Active/pressed */
+   --text-interactive-visited: var(--blue-darker);        /* Visited links */
+
+   /* --- State Text (Feedback) --- */
+   --text-success: var(--emerald-dark);           /* Success messages */
+   --text-error: var(--red-dark);                 /* Error/validation text */
+   --text-warning: var(--amber-dark);             /* Warning text */
+   --text-info: var(--sky-dark);                  /* Info text */
+
+   /* --- Special Text --- */
+   --text-inverse: var(--gray-lightest);          /* Text on dark backgrounds */
+   --text-on-color: var(--gray-lightest);         /* Text on colored surfaces */
+   --text-accent: var(--blue-dark);               /* Accent/highlighted text */
+   --text-brand: var(--blue-default-light);       /* Brand-colored text */
+
+   /* --- Text on Surfaces --- */
+   --text-on-surface: var(--gray-darker);         /* Text on base surface */
+   --text-on-raised: var(--gray-darker);          /* Text on cards/panels */
+   --text-on-interactive: var(--gray-lightest);   /* Text on buttons */
+   --text-on-success: var(--emerald-darker);      /* Text on success surface */
+   --text-on-error: var(--red-darker);            /* Text on error surface */
+   --text-on-warning: var(--amber-darker);        /* Text on warning surface */
+   --text-on-info: var(--sky-darker);             /* Text on info surface */
+
+   /* --- Heading Text --- */
+   --text-heading: var(--gray-darkest);           /* Main headings (h1-h6) */
+   --text-subheading: var(--gray-darker);         /* Subheadings */
+
+   /* =========================
+      📏 BORDER TOKENS
+      ========================= */
+
+   /* --- Base Borders --- */
+   --border-default: var(--gray-light);            /* Standard borders (cards, dividers) */
+   --border-subtle: var(--gray-lighter);           /* Subtle separators */
+   --border-strong: var(--gray-default-dark);      /* Emphasized borders */
+   --border-transparent: transparent;              /* No border (but keeps layout) */
+
+   /* --- Interactive Borders --- */
+   --border-interactive: var(--blue-default-light);        /* Default interactive */
+   --border-interactive-hover: var(--blue-dark);           /* Hover state */
+   --border-interactive-active: var(--blue-darker);        /* Active/pressed */
+   --border-interactive-disabled: var(--gray-lighter);     /* Disabled */
+
+   /* --- State Borders (Feedback) --- */
+   --border-success: var(--emerald-default-light);  /* Success state */
+   --border-error: var(--red-default-light);        /* Error/validation */
+   --border-warning: var(--amber-default-light);    /* Warning state */
+   --border-info: var(--sky-default-light);         /* Info state */
+
+   /* --- Input Borders --- */
+   --border-input: var(--gray-light);              /* Default input border */
+   --border-input-hover: var(--gray-default-dark); /* Input hover */
+   --border-input-focus: var(--blue-default-light); /* Input focused */
+   --border-input-error: var(--red-default-light);  /* Validation error */
+   --border-input-disabled: var(--gray-lighter);    /* Disabled input */
+
+   /* --- Special Borders --- */
+   --border-accent: var(--blue-default-light);     /* Accent/highlight borders */
+   --border-inverse: var(--gray-lightest);         /* For dark backgrounds */
+   --border-divider: var(--gray-lighter);          /* Section dividers */
+
+   /* =========================
+      🔘 ICON TOKENS
+      ========================= */
+
+   /* --- Base Icons --- */
+   --icon-default: var(--gray-dark);              /* Standard icons */
+   --icon-subtle: var(--gray-light);              /* De-emphasized icons */
+   --icon-strong: var(--gray-darker);             /* Emphasized icons */
+   --icon-muted: var(--gray-default-dark);        /* Secondary/helper icons */
+
+   /* --- Interactive Icons --- */
+   --icon-interactive: var(--blue-default-light);         /* Clickable icons */
+   --icon-interactive-hover: var(--blue-dark);            /* Hover state */
+   --icon-interactive-active: var(--blue-darker);         /* Active/pressed */
+   --icon-interactive-disabled: var(--gray-light);        /* Disabled state */
+
+   /* --- State Icons (Feedback) --- */
+   --icon-success: var(--emerald-default-light);   /* Success icons */
+   --icon-error: var(--red-default-light);         /* Error/warning icons */
+   --icon-warning: var(--amber-default-light);     /* Warning icons */
+   --icon-info: var(--sky-default-light);          /* Info icons */
+
+   /* --- Special Icons --- */
+   --icon-accent: var(--blue-default-light);       /* Accent/branded icons */
+   --icon-inverse: var(--gray-lightest);           /* Icons on dark backgrounds */
+   --icon-on-color: var(--gray-lightest);          /* Icons on colored surfaces */
+   --icon-brand: var(--blue-default-light);        /* Brand/logo colors */
+
+   /* --- Icon on Surfaces --- */
+   --icon-on-surface: var(--gray-dark);            /* Icons on base surface */
+   --icon-on-raised: var(--gray-darker);           /* Icons on cards/panels */
+   --icon-on-interactive: var(--gray-lightest);    /* Icons on buttons */
+}
+
+/* =========================
+   🌚 Dark Theme
+   ========================= */
+[data-theme="dark"] {
+  /* Base Surfaces */
+  --surface-base: var(--gray-darkest);
+  --surface-raised: var(--gray-darker);
+  --surface-overlay: var(--gray-dark);
+  --surface-elevated: var(--gray-default-dark);
+
+  /* Interactive */
+  --surface-interactive: var(--blue-default-dark);
+  --surface-interactive-hover: var(--blue-light);
+  --surface-interactive-active: var(--blue-lighter);
+  --surface-interactive-disabled: var(--gray-darker);
+
+  /* States */
+  --surface-success: var(--emerald-darkest);
+  --surface-success-muted: var(--emerald-darker);
+  --surface-error: var(--red-darkest);
+  --surface-error-muted: var(--red-darker);
+  --surface-warning: var(--amber-darkest);
+  --surface-warning-muted: var(--amber-darker);
+  --surface-info: var(--sky-darkest);
+  --surface-info-muted: var(--sky-darker);
+
+  /* Inputs */
+  --surface-input: var(--gray-darker);
+  --surface-input-hover: var(--gray-dark);
+  --surface-input-focus: var(--gray-darkest);
+  --surface-input-disabled: var(--gray-darker);
+
+  /* Special */
+  --surface-accent: var(--blue-default-dark);
+  --surface-inverse: var(--gray-lightest);
+  --surface-backdrop: rgba(0, 0, 0, 0.7);
+
+  /* Base Text */
+  --text-primary: var(--gray-lighter);
+  --text-secondary: var(--gray-light);
+  --text-tertiary: var(--gray-default-light);
+  --text-muted: var(--gray-dark);
+  --text-disabled: var(--gray-dark);
+
+  /* Interactive */
+  --text-interactive: var(--blue-default-dark);
+  --text-interactive-hover: var(--blue-light);
+  --text-interactive-active: var(--blue-lighter);
+  --text-interactive-visited: var(--blue-lighter);
+
+  /* States */
+  --text-success: var(--emerald-light);
+  --text-error: var(--red-light);
+  --text-warning: var(--amber-light);
+  --text-info: var(--sky-light);
+
+  /* Special */
+  --text-inverse: var(--gray-darkest);
+  --text-on-color: var(--gray-darkest);
+  --text-accent: var(--blue-light);
+  --text-brand: var(--blue-default-dark);
+
+  /* On Surfaces */
+  --text-on-surface: var(--gray-lighter);
+  --text-on-raised: var(--gray-lighter);
+  --text-on-interactive: var(--gray-darkest);
+  --text-on-success: var(--emerald-lighter);
+  --text-on-error: var(--red-lighter);
+  --text-on-warning: var(--amber-lighter);
+  --text-on-info: var(--sky-lighter);
+
+  /* Headings */
+  --text-heading: var(--gray-lightest);
+  --text-subheading: var(--gray-lighter);
+
+  /* Base Borders */
+  --border-default: var(--gray-dark);
+  --border-subtle: var(--gray-darker);
+  --border-strong: var(--gray-default-light);
+  --border-transparent: transparent;
+
+  /* Interactive */
+  --border-interactive: var(--blue-default-dark);
+  --border-interactive-hover: var(--blue-light);
+  --border-interactive-active: var(--blue-lighter);
+  --border-interactive-disabled: var(--gray-darker);
+
+  /* States */
+  --border-success: var(--emerald-default-dark);
+  --border-error: var(--red-default-dark);
+  --border-warning: var(--amber-default-dark);
+  --border-info: var(--sky-default-dark);
+
+  /* Inputs */
+  --border-input: var(--gray-dark);
+  --border-input-hover: var(--gray-default-light);
+  --border-input-focus: var(--blue-default-dark);
+  --border-input-error: var(--red-default-dark);
+  --border-input-disabled: var(--gray-darker);
+
+  /* Special */
+  --border-accent: var(--blue-default-dark);
+  --border-inverse: var(--gray-darkest);
+  --border-divider: var(--gray-darker);
+
+  /* Base Icons */
+  --icon-default: var(--gray-light);
+  --icon-subtle: var(--gray-dark);
+  --icon-strong: var(--gray-lighter);
+  --icon-muted: var(--gray-default-light);
+
+  /* Interactive */
+  --icon-interactive: var(--blue-default-dark);
+  --icon-interactive-hover: var(--blue-light);
+  --icon-interactive-active: var(--blue-lighter);
+  --icon-interactive-disabled: var(--gray-dark);
+
+  /* States */
+  --icon-success: var(--emerald-default-dark);
+  --icon-error: var(--red-default-dark);
+  --icon-warning: var(--amber-default-dark);
+  --icon-info: var(--sky-default-dark);
+
+  /* Special */
+  --icon-accent: var(--blue-default-dark);
+  --icon-inverse: var(--gray-darkest);
+  --icon-on-color: var(--gray-darkest);
+  --icon-brand: var(--blue-default-dark);
+
+  /* On Surfaces */
+  --icon-on-surface: var(--gray-light);
+  --icon-on-raised: var(--gray-lighter);
+  --icon-on-interactive: var(--gray-darkest);
+}

@@ -1,0 +1,72 @@
+@import './styles/base.css';
+/* MDev variables */
+/* Colors:
+    Base:
+      Blue:
+        lightest - blue-50
+        lighter - blue-100
+        light - blue-400
+        default-dark - blue-500
+        default-light - blue-600
+        dark - blue-700
+        darker - blue-900
+        darkest - blue-950
+
+      Gray:
+        lightest - gray-50
+        lighter - gray-100
+        light - gray-400
+        default-dark - gray-500
+        default-light - gray-600
+        dark - gray-700
+        darker - gray-900
+        darkest - gray-950
+
+      Red:
+        lightest - red-50
+        lighter - red-100
+        light - red-400
+        default-dark - red-500
+        default-light - red-600
+        dark - red-700
+        darker - red-900
+        darkest - red-950
+
+      Emerald:
+        lightest - emerald-50
+        lighter - emerald-100
+        light - emerald-400
+        default-dark - emerald-500
+        default-light - emerald-600
+        dark - emerald-700
+        darker - emerald-900
+        darkest - emerald-950
+
+      Sky:
+        lightest - sky-50
+        lighter - sky-100
+        light - sky-400
+        default-dark - sky-500
+        default-light - sky-600
+        dark - sky-700
+        darker - sky-900
+        darkest - sky-950
+
+      Amber:
+        lightest - amber-50
+        lighter - amber-100
+        light - amber-400
+        default-dark - amber-500
+        default-light - amber-600
+        dark - amber-700
+        darker - amber-900
+        darkest - amber-950
+*/
+/* Theme
+  Purpose	             Light Mode   Dark Mode	   	Notes
+  Background surface   blue-50      gray-950	    Light blue surface → deep neutral black
+  Secondary surface    blue-100     gray-900	    Soft contrast section or card
+  Primary color        blue-600     blue-500      Main brand color, slightly lighter in dark
+  Accent / Hover       blue-400     blue-400      Reused for hover / accent consistency
+  Text color           gray-900     gray-50	      Readable contrast in both modes
+*/
