@@ -9,7 +9,7 @@
 /* Core Tokens */
 @import './tokens/colors.css';
 @import './tokens/typography.css';
-/*@import './tokens/borders.css';
+@import './tokens/borders.css';
 @import './tokens/shadows.css';
 @import './tokens/layout.css';
-@import './tokens/transitions.css'; */
+@import './tokens/transitions.css';
